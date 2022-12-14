@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "singularName": "team",
+    "pluralName": "teams",
+    "displayName": "Team",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "club": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::club.club",
+      "inversedBy": "teams"
+    },
+    "fixtures": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fixture.fixture",
+      "mappedBy": "awayTeam"
+    },
+    "identifier": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "private": true
+    },
+    "league": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::league.league",
+      "inversedBy": "teams"
+    }
+  }
+}
