@@ -3,19 +3,20 @@ This CMS for the North East Basketball Board was built using [Strapi v4](https:/
 
 It sets up a set of related content types:
 - Club
--- (otm) Teams
+    - *(otm) Teams*
 - League 
--- (otm) Teams
+    - *(otm) Teams*
 - Teams
--- (mto) Club
--- (mto) League
--- (mtm) Fixture
+    - *(mto) Club*
+    - *(mto) League*
+    - *(mtm) Fixture*
 - Fixture
--- (mtm) Team
+    - *(mtm) Team*
 - User
-- News Posts (TBD)
-- Front Page links (TBD)
-- Front Page Welcome Message (TBD)
-- Analytics Entry (TBD)
+
+To be added:
+- News Posts
+- Front Page links
+- Front Page Welcome Message
 
 Strapi generates from these content types a REST API which is consumed by the [NEBB Public Site](https://github.com/dangoreilly/nebb-front-end), which also serves as a portal for maintaining the league through updating fixtures with scores and assigning points. 
