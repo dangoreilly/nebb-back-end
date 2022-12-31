@@ -34,6 +34,11 @@
       "relation": "oneToMany",
       "target": "api::team.team",
       "mappedBy": "league"
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     }
   }
 }
