@@ -4,7 +4,8 @@
   "info": {
     "singularName": "club",
     "pluralName": "clubs",
-    "displayName": "Club"
+    "displayName": "Club",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,17 +16,23 @@
       "type": "string"
     },
     "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "teams": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::team.team",
       "mappedBy": "club"
+    },
+    "canonicalURL": {
+      "type": "uid",
+      "targetField": "Name",
+      "required": true
     }
   }
 }
