@@ -20,9 +20,9 @@ module.exports = ({env}) => ({
           apiKey: env('SENDGRID_API_KEY'),
         },
         settings: {
-          defaultFrom: 'no-reply@tcdsensemap-test.ie',
-          defaultReplyTo: 'dangoreilly@gmail.com',
-          testAddress: 'dangoreilly@gmail.com',
+          defaultFrom: 'danieloreilly@nebb.ie',
+          defaultReplyTo: 'danieloreilly@nebb.ie',
+          testAddress: 'danieloreilly@nebb.ie',
         },
       },
     },
