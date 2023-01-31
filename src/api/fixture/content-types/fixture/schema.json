@@ -48,6 +48,12 @@
       "relation": "manyToOne",
       "target": "api::league.league",
       "inversedBy": "fixtures"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "publicNote": {
+      "type": "text"
     }
   }
 }
