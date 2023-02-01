@@ -16,10 +16,10 @@
     "@strapi/provider-email-sendgrid": "^4.5.3",
     "@strapi/strapi": "4.5.3",
     "better-sqlite3": "7.4.6",
+    "pg": "^8.9.0",
     "strapi-plugin-entity-relationship-chart": "^4.1.0",
     "strapi-provider-upload-do": "^3.6.6",
-    "strapi-tiptap-editor": "^0.9.7",
-	"pg": "^8.9.0"
+    "strapi-tiptap-editor": "^0.9.7"
   },
   "author": {
     "name": "Daniel O'Reilly"
