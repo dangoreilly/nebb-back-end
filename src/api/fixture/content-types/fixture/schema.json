@@ -54,6 +54,9 @@
     },
     "publicNote": {
       "type": "text"
+    },
+    "time": {
+      "type": "string"
     }
   }
 }
